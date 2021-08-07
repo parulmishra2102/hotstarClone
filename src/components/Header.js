@@ -39,7 +39,6 @@ let sources = [
           <span>{item.title}</span>
         </a> 
         )}
-       
         
       </NavMenu>
       <UserImg src="images/Passport size photo.jpeg"/>
