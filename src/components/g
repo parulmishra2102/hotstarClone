@@ -1,0 +1,25 @@
+
+        <a>
+          <img src="images/search-icon.svg"></img>
+          <span>Search</span>
+        </a>
+        <a>
+          <img src="images/watchlist-icon.svg"></img>
+          <span>Watchlist</span>
+        </a>
+        <a>
+          <img src="images/original-icon.svg"></img>
+          <span>Orignals</span>
+        </a>
+        <a>
+          <img src="images/movie-icon.svg"></img>
+          <span>Movies</span>
+        </a>
+        <a>
+          <img src="images/series-icon.svg"></img>
+          <span>Series</span>
+        </a>
+
+
+
+        

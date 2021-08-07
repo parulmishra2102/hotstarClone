@@ -1,34 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
 function Header() {
+let sources = [
+  {
+  img : 'images/home-icon.svg',
+  title : 'Home'
+},
+  {
+  img : 'images/watchlist-icon.svg',
+  title : 'Watchlist'
+},
+  {
+  img : "images/original-icon.svg",
+  title : 'Original'
+},
+  {
+  img : "images/movie-icon.svg",
+  title : 'Movie'
+},
+  {
+  img : "images/series-icon.svg",
+  title : 'Series'
+},
+  {
+  img : "images/search-icon.svg",
+  title : 'Search'
+},
+]
+    
   return (
     <NAV>
       <Logo src="/images/logo.svg" />
       <NavMenu>
-        <a>
-          <img src="images/home-icon.svg"></img>
-          <span>Home</span>
-        </a>
-        <a>
-          <img src="images/search-icon.svg"></img>
-          <span>Search</span>
-        </a>
-        <a>
-          <img src="images/watchlist-icon.svg"></img>
-          <span>Watchlist</span>
-        </a>
-        <a>
-          <img src="images/original-icon.svg"></img>
-          <span>Orignals</span>
-        </a>
-        <a>
-          <img src="images/movie-icon.svg"></img>
-          <span>Movies</span>
-        </a>
-        <a>
-          <img src="images/series-icon.svg"></img>
-          <span>Series</span>
-        </a>
+
+      { 
+        sources.map(item => <a>
+          <img src={item.img}></img>
+          <span>{item.title}</span>
+        </a> 
+        )}
+       
+        
       </NavMenu>
       <UserImg src="images/Passport size photo.jpeg"/>
     </NAV>
@@ -42,6 +54,7 @@ const NAV = styled.nav`
   display: flex;
   align-items: center;
   padding: 0 36px;
+  overflow-X:hidden;
 `;
 
 const Logo = styled.img`
