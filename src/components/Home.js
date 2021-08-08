@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import ImageSlider from './ImageSlider'
+import Viewer from './Viewer'
 
 
 function Home() {
   return <Container>
       <ImageSlider>npm install slick-carousel --save</ImageSlider>
+      <Viewer></Viewer>
 
   </Container>;
 }
